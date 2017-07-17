@@ -22,12 +22,11 @@ public class Prog1
    5 - 
    F - repeat step 4 & 5 until solved 
    */
-   static Check verify = new Check();
-   private Random random;
-   static int[][] board;
-   static int size = 1;
-   static long startTime = 0;
-   static long endTime = 0; 
+   private static Execute run = new Exe();
+   public static int[][] board;
+   private static long startTime = 0;
+   private static long endTime = 0; 
+   public static int size = 0;
    
    public static void main(String[] args) 
    {
@@ -60,7 +59,7 @@ public class Prog1
       }
    
       // Place Queens
-      cycle(1,0,0);
+      run.cycle(1,0,0);
       
       //End Timer
       endTime = System.nanoTime();
@@ -78,7 +77,14 @@ public class Prog1
       }
    }
 
-
+   public int getSize()
+   {
+      return size;   
+   }
+   public int[][] getBoard()
+   {
+      return board;
+   }
 
 
       //-------------------------------------------------------------
@@ -87,46 +93,7 @@ public class Prog1
       // Repeat until solved or a dead end
       // If dead end, return false
       //-------------------------------------------------------------
-   public static boolean cycle(int queen, int x, int y)
-   {
-      while(y < size)
-      {
-         //if board space is open
-         if(board[x][y] == 0)
-         {
-            //and if there are no conflicting pieces
-            if(verify.check(size,board,x,y) == true)
-            {
-               //place the queen in this spot
-               board[x][y] = 1;
-               //if it is the last queen, collapse the method
-               if(queen == size)
-               {
-                  return true;
-               }
-               //call next instance and collapse method if solution is found
-               else if(cycle(queen+1,0,y+1) == true)
-               {
-                  return true;
-               }
-               //if solution was not found reset spot to empty and continue
-               else
-               {
-                  board[x][y] = 0;
-               }
-            }
-         }
-         //cycle through each spot
-         x++;
-         if(x >= size)
-         {
-            x=0;
-            y++;
-         }
-      }
-      //you have exceeded the board, solution was not found, collapse instance
-      return false;
-   }
+   
 
 }
 
