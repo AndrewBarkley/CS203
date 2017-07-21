@@ -22,7 +22,7 @@ public class Prog1
    5 - 
    F - repeat step 4 & 5 until solved 
    */
-   private static Execute run = new Exe();
+   private static Execute run = new Execute();
    public static int[][] board;
    private static long startTime = 0;
    private static long endTime = 0; 
@@ -66,6 +66,8 @@ public class Prog1
    
       System.out.print("The puzzle was solved in: ");
       System.out.println((endTime - startTime) + " nanoSeconds");
+      System.out.print("This can also be read as: ");
+      System.out.println((endTime - startTime)/(float)(1000000000) + " Seconds");
       for(int i=0; i<size; i++)
       {
          for(int j=0; j<size; j++)

@@ -1,0 +1,27 @@
+notes for CS W2D1
+------------------
+Quiz next class
+------------------
+
+Efficiencies
+	-input based running time
+		-EX. A sequential search
+			+Worst Case: item is in the last item checked
+			+Best Case: item is the first item checked
+			+Average Case: avg is not the mid point between best and worst
+							Use probability to determine the likelyhood a box will be picked
+							
+	-Notation
+		big O notation(O)
+		big omega notaion
+		big theta notation
+		t(n) = time function
+		g(n) = general fucntion to compare against
+			
+			O(g(n)) = set of all func. with a lower or same order of growth as g(n)
+			Omega(g(n)) = opposite of O(g(n))
+			Theta(g(n)) = set of all func. with the same order of growth as g(n)
+			
+	you can take the limit as n -> infinity of one f()/g() to determine which func. is smaller
+	
+	string suggest looking over the slides. They explain things rather well

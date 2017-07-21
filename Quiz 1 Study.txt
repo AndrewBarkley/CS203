@@ -1,0 +1,28 @@
+CS-203 Quiz 1 Notes
+--------------------
+
+-Euclid's Algorithm
+
+-Sieve of Erotosthenes
+
+-FIrst step is always to fully understand the problem
+
+-Valuable table on page 10
+
+-parallel vs sequential algorithms
+
+-approximate vs exact algorithms
+
+-design technique
+
+-prove correectness using discrete
+
+-both types of efficiency and simplicity
+
+-stable sorting
+
+-graphs
+
+-combinatorial, geometric, numerical problems
+
+-data structures

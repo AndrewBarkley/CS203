@@ -1,0 +1,12 @@
+CS203 W2D2 Notes
+----------------
+
+How to analyze time efficiency (on the slides)
+
+	-Decide on parameters (like size of the input n)
+	
+	-Identify the basic operation (usually the innermost loop)
+	
+	-count the number of times the loop iterates based on n (avg case/worst case)
+	
+-
