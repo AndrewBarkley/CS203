@@ -12,28 +12,37 @@ import java.io.*;
 public class Queen
 {
 	private int row;
-	private int column;
 	private int conflict;
 
 	public Queen()
 	{
 		row = 0;
-		column = 0;
 		//have a base conflict of 1 to ensure at least one instance of testing
 		conflict = 1;
 	}
 
-	public setRow(int row)
+	public Queen(int row)
 	{
-		this = row;
+		this.row = row;
+		conflict = 1;
 	}
-	public setRow(int column)
+
+	public void setRow(int row)
 	{
-		this = column;
+		this.row = row;
 	}
-	public setRow(int conflict)
+	public void setConflict(int conflict)
 	{
-		this = conflict;
+		this.conflict = conflict;
+	}
+
+	public int getRow()
+	{
+		return row;
+	}
+	public int getConflict()
+	{
+		return conflict;
 	}
 	
 }

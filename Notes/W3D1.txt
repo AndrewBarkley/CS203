@@ -1,0 +1,43 @@
+CS203 W3D1 Notes
+----------------
+Quiz answers
+
+for weighted graphs the associated matrix has the wieghted values in their respected squares
+for the associated list, place the connected letter then the weight.
+
+----------------
+Lesson 2
+----------------
+
+
+how to analyzize
+
+	-decide on parameters
+
+	-identify the basic opertion
+
+	-check the number of times executed.
+
+	-setup reccurence relation
+
+	-
+
+empircal algorithms of analysis
+	
+	1) understand the purpuse of the algorythm
+	
+	2) Decide in the efficiency metric M to be measured, and the measurement unit (an operation count vs. time unit
+	
+	3) Decide on the characteristics of the input sample (it's range, size, etc.)
+	
+	4) prepare a program implementation of teh algorithm
+	
+	5) generate a sample of inputs
+	
+	6) run the algorithm on the sample of inputs and record the data
+	
+	7) analize the data
+	
+mycurvefit.com
+desmos.com
+visualgo
